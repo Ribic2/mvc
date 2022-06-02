@@ -1,0 +1,15 @@
+{
+    "name": "vidbu/fuckingaround",
+    "autoload": {
+        "psr-4": {
+            "Vidbu\\Fuckingaround\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vid Bukovec",
+            "email": "vid.bukovec8361@gmail.com"
+        }
+    ],
+    "require": {}
+}

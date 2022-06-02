@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello this is a test file</h1>
+<p>How are you do</p>
+<hr>
+<h3>List of agents:</h3>
+<?php
+foreach($agents as $agent => $key){
+    print_r($key["AGENT_NAME"]);
+}
+
+?>
+<script src="/views/js/session.js"></script>
+</body>
+</html>
