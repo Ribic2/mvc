@@ -9,7 +9,7 @@ class initialization
 {
     public static ?Router $instance = null;
 
-    public function init()
+    public function init(): void
     {
         $this->setInstance();
         include("./src/Routes/Routes.php");

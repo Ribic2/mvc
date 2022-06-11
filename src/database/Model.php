@@ -4,7 +4,7 @@ namespace Vidbu\Fuckingaround\database;
 
 class Model
 {
-    public static ?string $table;
+    public static ?string $table = null;
     protected static $instance = null;
     protected static string $query = "";
 
@@ -36,7 +36,12 @@ class Model
 
     public function get(): bool|array
     {
-        return Database::connect()->query(self::$query)->fetchAll();
+        return Database::connect()->query(self::$query)->fetchAll(\PDO::FETCH_ASSOC);
+    }
+
+    public function exec(): bool
+    {
+        return Database::connect()->exec(self::$query);
     }
 
     public static function query(string $query): ?Model
@@ -47,4 +52,6 @@ class Model
         }
         return self::$instance;
     }
+
+
 }

@@ -11,5 +11,7 @@
             "email": "vid.bukovec8361@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+      "ext-pdo": "*"
+    }
 }

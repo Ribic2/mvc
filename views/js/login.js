@@ -5,14 +5,15 @@
         let username = document.getElementsByName('username')[0].value;
         let password = document.getElementsByName('password')[0].value;
 
-        fetch('http://192.168.56.56/login', {
+        let data = new FormData();
+        data.append('username', username);
+        data.append('password', password);
+
+        fetch('http://mvc.test/login', {
             method: 'POST',
-            body: JSON.stringify({
-                username,
-                password
-            }),
+            body: data
         })
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(data => localStorage.setItem('key', data.key))
     })
 })()

@@ -22,7 +22,20 @@ class ComposerStaticInit2609f594bb62f5784207c39c23890915
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Vidbu\\Fuckingaround\\Controller\\Controller' => __DIR__ . '/../..' . '/src/Controller/Controller.php',
+        'Vidbu\\Fuckingaround\\Controller\\controllers\\IndexController' => __DIR__ . '/../..' . '/src/Controller/controllers/IndexController.php',
+        'Vidbu\\Fuckingaround\\Migrations\\Abstract\\Migration' => __DIR__ . '/../..' . '/src/Migrations/Abstract/Migration.php',
+        'Vidbu\\Fuckingaround\\Migrations\\MigrationCLI' => __DIR__ . '/../..' . '/src/Migrations/MigrationCLI.php',
+        'Vidbu\\Fuckingaround\\Migrations\\MigrationsFunctions' => __DIR__ . '/../..' . '/src/Migrations/MigrationsFunctions.php',
+        'Vidbu\\Fuckingaround\\Routing\\PageNotFound' => __DIR__ . '/../..' . '/src/Routing/PageNotFound.php',
+        'Vidbu\\Fuckingaround\\Routing\\Route' => __DIR__ . '/../..' . '/src/Routing/Route.php',
         'Vidbu\\Fuckingaround\\Routing\\Router' => __DIR__ . '/../..' . '/src/Routing/Router.php',
+        'Vidbu\\Fuckingaround\\View\\Json' => __DIR__ . '/../..' . '/src/View/Json.php',
+        'Vidbu\\Fuckingaround\\View\\View' => __DIR__ . '/../..' . '/src/View/View.php',
+        'Vidbu\\Fuckingaround\\database\\Database' => __DIR__ . '/../..' . '/src/database/Database.php',
+        'Vidbu\\Fuckingaround\\database\\Model' => __DIR__ . '/../..' . '/src/database/Model.php',
+        'Vidbu\\Fuckingaround\\database\\Models\\Agent' => __DIR__ . '/../..' . '/src/database/Models/Agent.php',
+        'Vidbu\\Fuckingaround\\initialization' => __DIR__ . '/../..' . '/src/initialization.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
